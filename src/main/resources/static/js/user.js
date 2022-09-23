@@ -15,7 +15,7 @@ let index = {
         // ajax 호출 시, default 가 비동기 호출
         $.ajax({
             type: "post",
-            url: "/api/user",
+            url: "/auth/joinProc",
             data: JSON.stringify(data), //http body
             contentType: "application/json; charset=utf-8", //body data type
             dataType: "json" //응답의 data type (응답이 왔을 때 기본적으로 모든 것이 문자열 (생긴게 json 이면 javascript object 로 변경)
